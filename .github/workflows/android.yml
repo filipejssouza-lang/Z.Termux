@@ -53,6 +53,8 @@ jobs:
 
       - name: 配置 Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools'
 
       - name: 安装项目所需 Android 组件
         run: |
